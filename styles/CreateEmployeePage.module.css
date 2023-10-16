@@ -1,0 +1,101 @@
+.createEmployeePage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    #00ffff,
+    #00e8fc,
+    #00d0f5,
+    #00b9e9,
+    #24a1d8,
+    #339fd6,
+    #3d9ed3,
+    #469cd1,
+    #4aafdf,
+    #53c3eb,
+    #60d6f5,
+    #71e9ff
+  );
+}
+
+.createEmployeeForm {
+  height: 400px;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: 2px 5px 7px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background-image: linear-gradient(
+    to bottom,
+    #7d7d7d,
+    #89898b,
+    #949699,
+    #9ea3a7,
+    #a8b1b5,
+    #a8b2b7,
+    #a7b4b9,
+    #a7b5bb,
+    #9ea9b2,
+    #989da9,
+    #92919e,
+    #8d8591
+  );
+}
+
+.input {
+  height: 40px;
+  width: 260px;
+  /* border-radius: 6px; */
+  text-indent: 1rem;
+  box-shadow: 0px 2px 5px 0px;
+  font-size: 1rem;
+}
+
+.submitFormBtn {
+  height: 30px;
+  width: 100px;
+  border-radius: 50px;
+  box-shadow: 0px 2px 5px 0px;
+  background-image: linear-gradient(
+    to bottom,
+    #ee82ee,
+    #ed8eeb,
+    #ec9ae9,
+    #eba6e6,
+    #e9b1e4,
+    #e9b1e4,
+    #e9b1e4,
+    #e9b1e4,
+    #eba6e6,
+    #ec9ae9,
+    #ed8eeb,
+    #ee82ee
+  );
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.submitFormBtn:hover {
+  transform: scale(1.2);
+  background-image: linear-gradient(
+    to top,
+    #28f3c7,
+    #00f6ba,
+    #00f9ab,
+    #00fb9a,
+    #00fd86,
+    #00f87b,
+    #03f270,
+    #06ed65,
+    #0ddf63,
+    #14d261,
+    #19c45f,
+    #1eb75c
+  );
+}
