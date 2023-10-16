@@ -3,6 +3,7 @@ import { useState } from 'react';
 import axios from 'axios';
 
 function CreateEmployeePage() {
+  const [created, setCreated] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     age: '',
@@ -26,6 +27,7 @@ function CreateEmployeePage() {
         yearsExp: '',
         gender: '',
       });
+      setCreated(true);
     } catch (error) {
       console.error('There was an error submitting the form!', error);
     }
@@ -33,6 +35,7 @@ function CreateEmployeePage() {
 
   return (
     <div className={styles.createEmployeePage}>
+      <h2 className={styles.title}>Create Employee Page</h2>
       <form onSubmit={handleSubmit} className={styles.createEmployeeForm}>
         <input
           onChange={handleChange}
@@ -70,6 +73,12 @@ function CreateEmployeePage() {
           Submit
         </button>
       </form>
+
+      {created && (
+        <h2 className={styles.createdMessage}>
+          Employee was successfully created!
+        </h2>
+      )}
     </div>
   );
 }

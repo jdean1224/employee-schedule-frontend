@@ -99,3 +99,16 @@
     #1eb75c
   );
 }
+
+.createdMessage {
+  position: absolute;
+  top: 150px;
+  left: 680px;
+  font-family: Tahoma;
+  color: #d9fb00;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+}
